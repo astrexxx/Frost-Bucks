@@ -10,9 +10,9 @@ module.exports = {
       if (message.author.bot) return;
       if (message.guild.id !== process.env.guildId) return;
       if (!message.member.permissions.has('Administrator')) return;
-      let lol = Math.floor(Math.random() * 5) + 1;
+      let lol = Math.floor(Math.random() * 20) + 1;
       let claimId = '';
-      if (lol == 5) {
+      if (lol == 20) {
         const embed = BaseEmbed()
         .setDescription(`A snowball dropped <:snowball:1182334321214890064>`)
 
